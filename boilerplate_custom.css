@@ -1269,6 +1269,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     text-decoration: underline;
 }
 
+/* s, strike, delタグの代用のクラス
+    HTML5では取り消し線が非推奨となっているためコチラを使用する
+*/
+.del {
+    text-decoration: line-through double;
+    /* 旧式のブラウザ対策に個別指定 */
+    text-decoration-line: line-through;
+}
+
 .hatena-urllist .urllist-category-link {
     font-size: .7rem;
     padding: .1em .3em;
