@@ -606,13 +606,16 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   #globalheader-container に背景色や文字色を指定することでiframeの中にも色が反映されます。
 */
 #globalheader-container {
-    background-color: #454545;
-    color: #fff;
+    /* デフォルトで表示されるヘッダーを削除 */
+    display: none;
+    /* background-color: #454545;
+    color: #fff; */
 }
 
 /* container */
 #container,
 #footer {
+    padding-top: 0px; /* 非表示のグローバルヘッダ分を詰める*/
     padding-left: 10px;
     padding-right: 10px;
 }
